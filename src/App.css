@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #f59701;
+    --secondary-color: #1e2d3b;
+    --third-color: #3d5975;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.fontLibre {
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
+.color-black {
+   border-color: black !important;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.third-color {
+    color: var(--third-color);
+}
+
+.wrapper {
+    max-width: 1420px;
+    width: 100%;
+}
+
+.z-index20 {
+    z-index: 20;
+}
+
+.z-index0 {
+    z-index: 0;
+}
+
+.show-mobile {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .show-mobile {
+        display: flex;
+    }
+}

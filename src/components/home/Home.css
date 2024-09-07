@@ -1,0 +1,208 @@
+.container--banner {
+    position: relative;
+    height: 480px;
+}
+
+.bg-home-screen {
+    background-image: url('../../assets/images/home-screen.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.parallax-container .parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* Ajuste a cor e opacidade conforme necessário */
+    z-index: 1;
+    /* Garante que o overlay fique acima da imagem */
+    pointer-events: none;
+    /* Faz com que o overlay não interfira na interação com outros elementos */
+}
+
+.container--banner {
+    position: relative;
+    z-index: 2;
+    /* Garante que o texto fique acima do overlay */
+}
+
+.doubleStripe {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 10px;
+    width: 50px;
+}
+
+.btn-cta1 {
+    all: unset;
+    background-color: white;
+    color: #b51da6;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.home-text {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: white !important;
+}
+
+.btn--whiteAndBlack {
+    all: unset;
+    background-color: white;
+    transition: .3s;
+    padding: 10px 70px;
+    font-size: 1.4em;
+}
+
+.btn--whiteAndBlack:hover {
+    background-color: #0d1419;
+    color: white;
+}
+
+.logo-home {
+    height: 180px;
+    object-fit: contain;
+}
+
+.h2-home {
+    font-size: 3.5em;
+    color: #1e2d3b;
+    position: relative;
+}
+
+.about-us-bg {
+    background-color: #f7f7f7;
+}
+
+.counter-bg {
+    background-color: #edcd1f;
+}
+
+.img-client {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+/* Fade */
+
+.fade-left-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.fade-left-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.fade-left-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-left-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+/* right */
+
+.fade-right-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.fade-right-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.fade-right-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+/* Final Fade */
+
+/* Services Card Home */
+
+.services-card-home {
+    background-color: white;
+    border-radius: 15px;
+    height: 250px;
+}
+
+.img-banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .home-text {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .h1-mobile {
+        font-size: 30px;
+    }
+
+    p.text-p_mobile {
+        font-size: .6em !important;
+    }
+
+    img.logo-home {
+        height: 200px !important;
+        margin-bottom: unset !important;
+        object-fit: cover;
+    }
+
+    .logo {
+        width: 150px;
+        object-fit: contain;
+    }
+
+    div.about-us-container,
+    img.about-us-container {
+        width: 100% !important;
+    }
+
+    .counter-container {
+        margin: 20px 0;
+    }
+}

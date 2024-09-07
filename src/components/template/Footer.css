@@ -1,0 +1,15 @@
+.logo_footer {
+    width: 280px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-footer {
+    word-break: break-all;
+}
+
+@media (max-width: 1024px) {
+    .footer-mobile {
+        align-items: center;
+    }
+}

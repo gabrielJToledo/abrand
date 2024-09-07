@@ -1,0 +1,9 @@
+.submit-button-contact {
+    background-color: var(--secondary-color) !important;
+    border-radius: 15px !important;
+    padding: 10px 30px !important;
+}
+
+.submit-button-contact:hover {
+    background-color: rgb(58, 58, 58) !important;
+}
